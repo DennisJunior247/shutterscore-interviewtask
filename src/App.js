@@ -1,8 +1,8 @@
-import Layout from "./Pages/Dashboard";
+import Login from "./Pages/Login";
 function App() {
   return (
     <div className="App">
-      <Layout/>
+      <Login />
     </div>
   );
 }

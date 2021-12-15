@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  @media (max-width: 1387px) {
+  @media (max-width: 1287px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -85,5 +85,7 @@ export const BgImgContainer = styled.div`
       font-size: 20px;
     }
   }
-
+  @media (max-width: 1287px) {
+    display: none;
+  }
 `;
