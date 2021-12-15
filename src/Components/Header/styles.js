@@ -13,6 +13,6 @@ export const HeaderStyles = styled.menu`
   /* padding: 0 50px; */
   /* margin: 0 0 0 auto; */
   @media (max-width: 800px) {
-    width: 90%;
+    /* width: 100%; */
   }
 `;

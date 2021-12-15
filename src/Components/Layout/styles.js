@@ -4,7 +4,7 @@ export const LayoutStyle = styled.div`
   margin: 0 auto;
 `;
 export const Main = styled.main`
-  /* height: calc(100vh - 80px); */
+  /* min-height: calc(100vh - 200px); */
   background: #f5f6fa;
   margin: 0 0 0 auto;
   width: calc(100% - 200px);

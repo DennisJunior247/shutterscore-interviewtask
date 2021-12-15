@@ -1,8 +1,8 @@
-import Layout from "./Components/Layout";
+import Layout from "./Pages/Dashboard";
 function App() {
   return (
     <div className="App">
-      <Layout>dennis</Layout>
+      <Layout/>
     </div>
   );
 }

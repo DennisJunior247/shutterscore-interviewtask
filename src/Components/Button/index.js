@@ -3,7 +3,14 @@ import { BtnContainer } from "./styles";
 
 const Index = (props) => {
   return (
-    <BtnContainer color={props.color} icon={props.icon} bgColor={props.bgColor}>
+    <BtnContainer
+      padding={props.padding}
+      width={props.width}
+      color={props.color}
+      icon={props.icon}
+      bgColor={props.bgColor}
+      border={props.border}
+    >
       {props.text}
     </BtnContainer>
   );
