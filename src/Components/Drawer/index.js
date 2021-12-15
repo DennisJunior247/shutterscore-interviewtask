@@ -1,5 +1,5 @@
 import React from "react";
-import { FiLogOut } from "react-icons/fi";
+import { RiLogoutBoxRFill } from "react-icons/ri";
 import { AiOutlineCreditCard, AiOutlineHome } from "react-icons/ai";
 import { DrawerWrapper } from "./styles";
 
@@ -12,14 +12,14 @@ const Index = () => {
           <span>Dashboard</span>
         </li>
         <li>
-          <AiOutlineCreditCard height={"50em"} width={"50em"} />
+          <AiOutlineCreditCard  height={"50em"} width={"50em"} />
           <span>My Cards</span>
         </li>
       </section>
 
       <div>
         <li>
-          <FiLogOut />
+          <RiLogoutBoxRFill className="logoutSvg"/>
           <span>Logout</span>
         </li>
       </div>

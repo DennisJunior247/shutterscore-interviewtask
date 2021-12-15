@@ -9,46 +9,79 @@ export const DrawerWrapper = styled.div`
   height: 100vh;
   z-index: 10;
   overflow: hidden;
-  /* border: 1px solid blue; */
+  background: #ffff;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  section {
-    /* border: 1px solid red; */
+  border: 1px solid red;
+  @media (max-width: 800px) {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: auto;
     width: 100%;
+    height: auto;
+    z-index: 100000;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  section {
     position: relative;
     top: 120px;
+    @media (max-width: 800px) {
+      top: 0;
+      display: flex;
+    }
   }
 
   li {
     text-decoration: none;
     list-style: none;
-    /* border: 1px solid green; */
     width: 100%;
     margin-bottom: 30px;
     padding: 10px;
     display: flex;
     align-items: center;
+    @media (max-width: 800px) {
+      padding: 10px;
+    }
+    cursor: pointer;
     span {
       padding: 0 20px;
       color: #000000;
       font-weight: bold;
       font-size: 15px;
+      @media (max-width: 421px) {
+        font-size: 10px;
+        padding: 0 10px;
+      }
     }
     svg {
       width: 20px;
       height: 20px;
+      @media (max-width: 421px) {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
   div {
-    /* border: 1px solid black; */
     align-items: center;
-    width: 100%;
     position: relative;
     bottom: 150px;
     padding: 10px;
+    @media (max-width: 800px) {
+      border-radius: 1px solid black;
+      bottom: 0;
+      padding: 0;
+    }
+  }
+  .logoutSvg {
+    fill: #ff6464;
+    width: 20px;
+    height: 20px;
   }
 `;

@@ -1,8 +1,8 @@
-import Drawer from "./Components/Drawer";
+import Layout from "./Components/Layout";
 function App() {
   return (
     <div className="App">
-      <Drawer />
+      <Layout>dennis</Layout>
     </div>
   );
 }
