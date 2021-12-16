@@ -10,7 +10,7 @@ export const Styles = styled.div`
   > section {
     padding: 50px;
     margin: 70px 0;
-    max-width: 1100px;
+    /* max-width: 1300px; */
   }
 
   @media (max-width: 700px) {

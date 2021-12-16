@@ -1,24 +1,45 @@
 import React from "react";
 import Layout from "../../../Components/Layout";
-import { DashboardWrapper, DashboardCards } from "./styles";
+import { HomeStyles, Container1, DashboardCards } from "./styles";
 import Card from "../../../Components/Card";
 import DCard from "../../../Components/DebitCard";
+import { SiMastercard, SiVisa } from "react-icons/si";
 
 const Index = () => {
   return (
     <Layout>
-      <DashboardWrapper>
-        <div className="name">
+      <HomeStyles>
+        <Container1>
           <h2 className="dashboard-title">Dashboard</h2>
           <p className="dashboard-subTitle">
             Sed ut perspiciatis unde omnis iste natus error sit
           </p>
-        </div>
+        </Container1>
         <DashboardCards>
           <Card />
-          <DCard />
+          <DCard
+            amount={"150 000"}
+            currency={"UAH"}
+            icon={<SiMastercard />}
+            cardNum={"2132 8732 2347 3478"}
+            cvv={"07/20"}
+          />
+          <DCard
+            amount={"150 000"}
+            currency={"UAH"}
+            icon={<SiVisa />}
+            cardNum={"2132 8732 2347 3478"}
+            cvv={"07/20"}
+          />
+          <DCard
+            amount={"150 000"}
+            currency={"UAH"}
+            icon={<SiMastercard />}
+            cardNum={"2132 8732 2347 3478"}
+            cvv={"07/20"}
+          />
         </DashboardCards>
-      </DashboardWrapper>
+      </HomeStyles>
     </Layout>
   );
 };

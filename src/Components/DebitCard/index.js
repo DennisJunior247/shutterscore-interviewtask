@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "./styles";
-import { SiMastercard } from "react-icons/si";
 import { CgPen } from "react-icons/cg";
 
 const Index = (props) => {
@@ -17,7 +16,7 @@ const Index = (props) => {
       </section>
       <section className="iconWrapper">
         <span className="cvv">{props.cvv}</span>
-        <SiMastercard />
+        {props.icon}
       </section>
     </Card>
   );
