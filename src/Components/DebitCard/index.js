@@ -1,31 +1,24 @@
 import React from "react";
 import { Card } from "./styles";
-import Button from "../Button";
+import { SiMastercard } from "react-icons/si";
+import { CgPen } from "react-icons/cg";
 
-const Index = () => {
+const Index = (props) => {
   return (
     <Card>
-      <section>
-        <span className="text">Total Available balance</span>
-        <span className="amount">$25,958,485</span>
+      <section className="amount">
+        <span className="amount-in-card">
+          {props.amount} <small>{props.currency}</small>
+        </span>
+        <CgPen />
       </section>
-      <div>
-        <Button
-          width={"45%"}
-          bgColor={"#fff"}
-          color={"#00217B"}
-          text={"Fund wallet"}
-          padding={"10px"}
-        />
-        <Button
-          width={"45%"}
-          bgColor={"#007FFF"}
-          color={"#fff"}
-          text={"Get Started"}
-          padding={"10px"}
-          border={"0.3px solid #fff"}
-        />
-      </div>
+      <section className="card-number">
+        <span className="sub-cardNum">{props.cardNum}</span>
+      </section>
+      <section className="iconWrapper">
+        <span className="cvv">{props.cvv}</span>
+        <SiMastercard />
+      </section>
     </Card>
   );
 };

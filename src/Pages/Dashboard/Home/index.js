@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "../../Components/Layout";
+import Layout from "../../../Components/Layout";
 import { DashboardWrapper, DashboardCards } from "./styles";
-import Card from "../../Components/Card";
+import Card from "../../../Components/Card";
+import DCard from "../../../Components/DebitCard";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         </div>
         <DashboardCards>
           <Card />
+          <DCard />
         </DashboardCards>
       </DashboardWrapper>
     </Layout>

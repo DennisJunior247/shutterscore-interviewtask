@@ -1,27 +1,24 @@
 import styled from "styled-components";
 
-export const LayoutStyle = styled.div`
-  margin: 0 auto;
-`;
-export const Main = styled.main`
-  /* min-height: calc(100vh - 200px); */
-  background: #f5f6fa;
-  margin: 0 0 0 auto;
-  width: calc(100% - 200px);
-  padding: 32px 50px;
+export const Styles = styled.div`
+  min-height: 100vh;
   position: relative;
-  z-index: 1;
-  @media (max-width: 800px) {
-    padding: 32px 4%;
+  overflow: hidden;
+  width: calc(100% - 200px);
+  margin: 0 0 0 auto;
+  background-color: #f5f6fa;
+  > section {
+    padding: 50px;
+    margin: 70px 0;
+    max-width: 1100px;
   }
-  @media (max-width: 800px) {
+
+  @media (max-width: 700px) {
     width: 100%;
-  }
-  > div {
-    margin: 0 auto;
-    max-width: 1280px;
-    @media (max-width: 600px) {
-      margin-bottom: 20px;
+    margin-top: 136px;
+    > section {
+      margin: 20px 0;
+      padding: 20px 5%;
     }
   }
 `;

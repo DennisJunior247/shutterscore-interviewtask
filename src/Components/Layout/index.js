@@ -1,20 +1,20 @@
-import React from "react";
-import { LayoutStyle, Main } from "./styles";
-import Drawer from "../Drawer";
-import Menu from "../Header";
+import { Styles } from "./styles";
 
-const Index = ({ children }) => {
+import Header from "../../Components/Header";
+import Drawer from "../../Components/Drawer";
+
+const Layout = ({ children }) => {
   return (
     <>
-      <LayoutStyle>
-        <Menu />
-        <Drawer />
-        <Main>
-          <div>{children}</div>
-        </Main>
-      </LayoutStyle>
+      <Header />
+
+      <Drawer />
+
+      <Styles className="App">
+        <section className="layout">{children}</section>
+      </Styles>
     </>
   );
 };
 
-export default Index;
+export default Layout;

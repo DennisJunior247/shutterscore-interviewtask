@@ -1,34 +1,46 @@
 import styled from "styled-components";
 
+
 export const Card = styled.div`
-  width: 330px;
-  height: 138px;
-  background: #007fff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 20px #00000014;
-  border-radius: 50px;
+  width: 300px;
+  height: 128px;
+  border-radius: 30px;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 30px;
-  section {
-    display: flex;
-    flex-direction: column;
-    .amount {
-      font-size: 40px;
-      font-weight: bold;
-      color: #fff;
-      margin-top: 10px;
-    }
-    .text {
-      color: #fff;
-      font-size: 14px;
-    }
-   
-  }
-
-  div {
+  background: transparent linear-gradient(0deg, #2c2c2c 0%, #373737 100%);
+  box-shadow: 0px 15px 15px #0000000d;
+  .amount {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    margin-bottom: 15px;
+    small {
+      color: #cccccc;
+      font-size: 15px;
+    }
+    .amount-in-card {
+      font-size: 25px;
+      color: #ffff;
+    }
+  }
+  .card-number {
+    margin: 20px 0;
+    .sub-cardNum {
+      color: #979797;
+    }
+  }
+  .iconWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cvv {
+      color: #979797;
+    }
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: #979797;
+    }
   }
 `;
