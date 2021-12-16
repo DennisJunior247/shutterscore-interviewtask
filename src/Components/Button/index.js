@@ -9,6 +9,7 @@ const Index = (props) => {
       color={props.color}
       icon={props.icon}
       bgColor={props.bgColor}
+      onClick={props.onClick}
       border={props.border}
     >
       {props.text}

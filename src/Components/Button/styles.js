@@ -11,4 +11,5 @@ export const BtnContainer = styled.button`
   border: ${({ border }) => border || "none"};
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 `;

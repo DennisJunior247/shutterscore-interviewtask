@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import atm from "../../Assets/Atm.png";
 import bank from "../../Assets/bank.png";
 import pay from "../../Assets/pay.png";
-
+import { Link } from "react-router-dom";
 import {
   Container,
   Container2,
@@ -56,7 +56,9 @@ const Index = () => {
                 <input type={"checkbox"} />
                 <label>I accept these terms and conditions</label>
               </CheckBox>
-              <Button text={"Get Started"} />
+              <Link to={"/dashboard"}>
+                <Button text={"Login"} />
+              </Link>
             </form>
           </FormContainer>
         </Form>

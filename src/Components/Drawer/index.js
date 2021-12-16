@@ -16,8 +16,8 @@ const Index = () => {
             <span>Dashboard</span>
           </Link>
         </ListStyle>
-        <ListStyle>
-          <Link to={""}>
+        <ListStyle active={path === "/dashboard/card"}>
+          <Link to={"/dashboard/card"}>
             <AiFillCreditCard height={"50em"} width={"50em"} />
             <span>My Cards</span>
           </Link>
@@ -26,7 +26,7 @@ const Index = () => {
 
       <div>
         <ListStyle>
-          <Link to={""}>
+          <Link to={"/"}>
             <RiLogoutBoxRFill className="logoutSvg" />
             <span>Logout</span>
           </Link>

@@ -20,7 +20,7 @@ export const Container1 = styled.div`
 export const DashboardCards = styled.div`
   display: flex;
   column-gap: 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* flex-wrap: wrap; */
   width: 100%;
   /* border: 1px solid green; */
@@ -29,6 +29,5 @@ export const DashboardCards = styled.div`
 `;
 
 export const Container3 = styled.div`
-padding-top: 3rem;
-
+  padding-top: 3rem;
 `;
