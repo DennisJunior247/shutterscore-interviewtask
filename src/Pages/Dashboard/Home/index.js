@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "../../../Components/Layout";
-import { HomeStyles, Container1, DashboardCards } from "./styles";
+import { HomeStyles, Container1, DashboardCards, Container3 } from "./styles";
 import Card from "../../../Components/Card";
 import DCard from "../../../Components/DebitCard";
 import { SiMastercard, SiVisa } from "react-icons/si";
+import TransactionHistory from "../../../Components/TransactionHistory";
 
 const Index = () => {
   return (
@@ -39,6 +40,9 @@ const Index = () => {
             cvv={"07/20"}
           />
         </DashboardCards>
+        <Container3>
+          <TransactionHistory />
+        </Container3>
       </HomeStyles>
     </Layout>
   );

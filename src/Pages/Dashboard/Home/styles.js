@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const HomeStyles = styled.div`
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid yellow; */
+  height: 100%;
 `;
 
 export const Container1 = styled.div`
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
   .dashboard-title {
     color: #000000;
@@ -22,7 +23,12 @@ export const DashboardCards = styled.div`
   justify-content: space-between;
   /* flex-wrap: wrap; */
   width: 100%;
-  border: 1px solid green;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
+  /* border: 1px solid green; */
+  /* overflow-x: scroll; */
+  padding-top: 3rem;
+`;
+
+export const Container3 = styled.div`
+padding-top: 3rem;
+
 `;

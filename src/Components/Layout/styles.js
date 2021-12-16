@@ -4,12 +4,12 @@ export const Styles = styled.div`
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  width: calc(100% - 200px);
+  width: calc(100% - 240px);
   margin: 0 0 0 auto;
   background-color: #f5f6fa;
   > section {
     padding: 50px;
-    margin: 70px 0;
+    margin: 40px 0;
     /* max-width: 1300px; */
   }
 

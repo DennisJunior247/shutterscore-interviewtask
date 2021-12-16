@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DrawerWrapper = styled.div`
-  width: 200px;
+  width: 240px;
   position: fixed;
   left: 0;
   top: 0;
@@ -15,7 +15,7 @@ export const DrawerWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   @media (max-width: 800px) {
     bottom: 0;
     right: 0;
@@ -36,38 +36,6 @@ export const DrawerWrapper = styled.div`
     }
   }
 
-  li {
-    text-decoration: none;
-    list-style: none;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    @media (max-width: 800px) {
-      padding: 10px;
-    }
-    cursor: pointer;
-    span {
-      padding: 0 20px;
-      color: #000000;
-      font-weight: bold;
-      font-size: 15px;
-      @media (max-width: 421px) {
-        font-size: 10px;
-        padding: 0 10px;
-      }
-    }
-    svg {
-      width: 20px;
-      height: 20px;
-      @media (max-width: 421px) {
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
-
   div {
     align-items: center;
     position: relative;
@@ -83,5 +51,47 @@ export const DrawerWrapper = styled.div`
     fill: #ff6464;
     width: 20px;
     height: 20px;
+  }
+`;
+
+export const ListStyle = styled.li`
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  /* display: flex;
+  align-items: center; */
+  background-color: ${({ active }) => (active ? "#2994FF" : "none")};
+  border-right: ${({ active }) => (active ? " 1px solid #fff" : "#000000")};
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 800px) {
+    padding: 10px;
+  }
+  cursor: pointer;
+  span {
+    padding: 0 20px;
+    color: ${({ active }) => (active ? "#fff" : "#000000")};
+    font-weight: bold;
+    font-size: 15px;
+    @media (max-width: 421px) {
+      font-size: 10px;
+      padding: 0 10px;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: ${({ active }) => (active ? "#fff" : "#000000")};
+
+    @media (max-width: 421px) {
+      width: 15px;
+      height: 15px;
+    }
   }
 `;

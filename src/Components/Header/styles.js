@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export const HeaderStyles = styled.menu`
-  height: 80px;
+export const HeaderStyles = styled.div`
+  height: 70px;
   /* padding: 0 5%; */
   width: 100%;
   position: fixed;
   background: #ffff;
-  z-index: 2;
+  z-index: 3;
   right: 0;
   left: 0;
   top: 0;
-  border: 1px solid red;
+  /* bottom: 0; */
+  /* border: 1px solid red; */
   @media (max-width: 800px) {
     /* width: 100%; */
   }
